@@ -1,0 +1,59 @@
+@mixin container {
+  max-width: 13rem;
+}
+
+// ---- button style
+
+@mixin main-button {
+  padding: 1.5rem 2.75rem;
+  background-color: #1da1f2;
+  color: white;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  i {
+    font-size: 2rem;
+  }
+}
+
+// flex
+@mixin flex {
+  display: flex;
+}
+//flex justify center
+@mixin f-horizontal-center {
+  justify-content: center;
+}
+//flex-align-center
+@mixin f-vertical-center {
+  align-items: center;
+}
+//flex-center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//grid
+@mixin grid {
+  display: grid;
+}
+//grid columns
+@mixin grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+@mixin grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+@mixin grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+@mixin grid-5-col {
+  grid-template-columns: repeat(5, 1fr);
+}
+@mixin grid-6-col {
+  grid-template-columns: repeat(6, 1fr);
+}
+@mixin grid-center {
+  justify-items: center;
+  align-content: center;
+}
