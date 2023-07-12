@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 @import "./partials/mixin";
+@import './partials/media-query';
 
 * {
   margin: 0;
@@ -30,18 +31,26 @@ hr {
 ul > * {
   list-style: none;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4rem 16rem;
   background-color: #fbf8f3;
+  flex-wrap: wrap !important;
+  transition: all .6s ease-out;
 
   .logo {
     font-size: 3rem;
     color: #3180f5;
     font-style: italic;
     font-weight: 600;
+  }
+
+  .hamburger{
+    font-size: 3.2rem;
+    display: none;
   }
   nav {
     @include flex-center;
@@ -80,12 +89,15 @@ main {
   .main-section {
     @include grid;
     // @include grid-2-col;
-    grid-template-columns: 60fr 40fr;
+    grid-template-columns: 60% 40%;
     justify-items: center;
 
     .hero-img {
       width: 80%;
       margin-left: auto;
+    }
+    .tab-img{
+      display: none;
     }
     .avaters {
       margin-top: 3rem;
@@ -123,6 +135,7 @@ main {
       gap: 0.5rem;
     }
   }
+  
 }
 
 // feature-section
@@ -308,3 +321,5 @@ footer {
     gap: 2rem;
   }
 }
+
+

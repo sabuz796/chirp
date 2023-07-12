@@ -1,0 +1,92 @@
+// Small screens (e.g., smartphones)
+$twitter-logo: 'Sign in Twitter';
+
+@media (max-width: 576px){
+  header{
+    padding: 4rem 6rem !important;
+    nav{
+      .main-button{
+        padding: 1rem .5rem !important;
+        span{
+        font-size: 1.2rem;
+        content: $twitter-logo !important;
+        }
+      }
+    }
+    .nav-list{
+      display: none !important;
+    }
+    .open{
+      display: block !important;
+      display: flex !important;
+      width: 100%;
+      flex-direction: column;
+      
+    }
+    .hamburger{
+      display: block !important;
+    }
+    
+  }
+ main{
+  padding: 2rem 6rem !important;
+  .main-section{
+    grid-template-columns: 100%!important;
+    .desk-img{
+      display: none; 
+    }
+    .tab-img{
+      display: block !important;
+      order: -1;
+      margin-bottom: 2rem;
+    }
+    .primary-heading {
+      font-size: 3.5rem;}
+      .hero-text{
+        width: 100%;
+        // padding-bottom: 2rem;
+      }
+      .avaters{
+        .avater{
+          margin-right: -1.8rem !important;
+        }
+      }
+      
+  }
+ }
+ .features-section{
+  padding: 2rem 6rem !important;
+  .secondary-heading{
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+  .features{
+    grid-template-columns: 100% !important;
+    .feature{
+      width: 100%;
+    }
+   }
+ }
+ .customer-section{
+  padding: 2rem 6rem !important;
+  .customers{
+    flex-direction: column;
+  }
+ }
+ .price-section{
+  padding: 2rem 6rem !important;
+ }
+ footer{
+  padding: 2rem 6rem !important;
+ }
+}
+
+// Medium screens (e.g., landscape smartphones)
+@media (min-width: 577px) and (max-width: 768px){
+
+}
+
+// Large screens (e.g., small tablets)
+@media (min-width: 769px) and (max-width: 991px){
+  
+}

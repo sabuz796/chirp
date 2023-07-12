@@ -1,4 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@media (max-width: 576px) {
+  header {
+    padding: 4rem 6rem !important;
+  }
+  header nav .main-button {
+    padding: 1rem .5rem !important;
+  }
+  header nav .main-button span {
+    font-size: 1.2rem;
+    content: "Sign in Twitter" !important;
+  }
+  header .nav-list {
+    display: none !important;
+  }
+  header .open {
+    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .hamburger {
+    display: block !important;
+  }
+  main {
+    padding: 2rem 6rem !important;
+  }
+  main .main-section {
+    -ms-grid-columns: 100% !important;
+        grid-template-columns: 100% !important;
+  }
+  main .main-section .desk-img {
+    display: none;
+  }
+  main .main-section .tab-img {
+    display: block !important;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 2rem;
+  }
+  main .main-section .primary-heading {
+    font-size: 3.5rem;
+  }
+  main .main-section .hero-text {
+    width: 100%;
+  }
+  main .main-section .avaters .avater {
+    margin-right: -1.8rem !important;
+  }
+  .features-section {
+    padding: 2rem 6rem !important;
+  }
+  .features-section .secondary-heading {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+  .features-section .features {
+    -ms-grid-columns: 100% !important;
+        grid-template-columns: 100% !important;
+  }
+  .features-section .features .feature {
+    width: 100%;
+  }
+  .customer-section {
+    padding: 2rem 6rem !important;
+  }
+  .customer-section .customers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-section {
+    padding: 2rem 6rem !important;
+  }
+  footer {
+    padding: 2rem 6rem !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +131,10 @@ header {
           align-items: center;
   padding: 4rem 16rem;
   background-color: #fbf8f3;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+  -webkit-transition: all .6s ease-out;
+  transition: all .6s ease-out;
 }
 
 header .logo {
@@ -53,6 +142,11 @@ header .logo {
   color: #3180f5;
   font-style: italic;
   font-weight: 600;
+}
+
+header .hamburger {
+  font-size: 3.2rem;
+  display: none;
 }
 
 header nav {
@@ -119,14 +213,18 @@ main .hero-description {
 main .main-section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60fr 40fr;
-      grid-template-columns: 60fr 40fr;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
   justify-items: center;
 }
 
 main .main-section .hero-img {
   width: 80%;
   margin-left: auto;
+}
+
+main .main-section .tab-img {
+  display: none;
 }
 
 main .main-section .avaters {
